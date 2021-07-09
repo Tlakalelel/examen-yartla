@@ -13,7 +13,7 @@ use App\Http\Controllers\PrototypeController;
 |
 */
 
-Route::get('/inicio', [PrototypeController::class, 'index'])->name('inicio');
+Route::get('/', [PrototypeController::class, 'index'])->name('inicio');
 Route::post('/encrypt', [PrototypeController::class, 'encrypt'])->name('encrypt');
 Route::post('/generateKey', [PrototypeController::class, 'generateKey'])->name('generateKey');
 Route::post('/decrypt', [PrototypeController::class, 'decrypt'])->name('decrypt');
